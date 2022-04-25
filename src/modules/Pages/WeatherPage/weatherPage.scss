@@ -1,0 +1,87 @@
+@import '../../App/app.scss';
+
+.weather_wrapper{
+    width: 350px;  
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 13.9839px;
+    margin:  0 auto;
+    margin-top: 200px; 
+    box-sizing: border-box;
+    padding: 20px;
+    border: 3px solid #fff;
+    &_city{
+        text-align: center;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 21px;
+        color: #FFFFFF;
+        text-shadow: -1.39839px 2.09758px 0.699193px rgba(0, 0, 0, 0.1);
+    }
+    &_time{
+        text-shadow: -1.39839px 2.09758px 0.699193px rgba(0, 0, 0, 0.1);
+        font-weight: 500;
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        margin: 20px;
+    }
+    &_temperature{
+        font-size: 70px;
+        text-shadow: -2.79677px 5.59354px 34.9597px rgba(0, 0, 0, 0.1);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    &_cloud{
+        font-size: 27px;
+        text-shadow: -2.79677px 5.59354px 34.9597px rgba(0, 0, 0, 0.1);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .info{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        align-items: center;
+        margin-top: 10px;
+        img{
+            margin-right: 14px;
+        }
+        &_text{
+            font-size: 16px;
+            line-height: 16px;
+            color: #FFFFFF;
+            text-shadow: -1.39839px 2.09758px 0.699193px rgba(0, 0, 0, 0.1);
+        }
+        &_data{
+            font-size: 16px;
+            line-height: 16px;
+            color: #FFFFFF;
+            margin-left: 20px;
+            text-shadow: -1.39839px 2.09758px 0.699193px rgba(0, 0, 0, 0.1);
+        }
+        &:last-child{
+            margin-top: 10px;
+        }
+    }
+    a{
+        display: flex;
+        margin: 0;
+        margin-top: 30px;
+        color: #fff;
+        justify-content: center;
+        text-decoration: none;
+    }
+}
+
+@media screen and(max-width: 550px) {
+    .weather_wrapper{
+        width: 300px;
+    }
+}
